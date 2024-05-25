@@ -9,7 +9,7 @@ export default function Home() {
           className={styles.logo}
           fill={true}
           src="/logo.jpeg"
-          alt="Next.js logo"
+          alt="The logo for Mane Artistry by Jay"
         />
       </main>
     </div>
