@@ -1,17 +1,33 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import styles from './page.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <>
+      <div className={styles.container}>
         <Image
           className={styles.logo}
+          src='/logo.jpeg'
+          alt='The logo for Mane Artistry by Jay'
           fill={true}
-          src="/logo.jpeg"
-          alt="The logo for Mane Artistry by Jay"
         />
-      </main>
-    </div>
+      </div>
+      <div className={styles.linkContainer}>
+        <li className={styles.links}>
+          <ul>
+            <Link href={'https://www.instagram.com/maneartistrybyjay/'}>
+              Instagram
+            </Link>
+          </ul>
+          <ul>
+            <Link href={'/assets/price-list.pdf'}>Price list</Link>
+          </ul>
+          <ul>
+            <Link href={'mailto:maneartistrybyjay@gmail.com'}>Contact</Link>
+          </ul>
+        </li>
+      </div>
+    </>
   );
 }
