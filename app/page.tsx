@@ -21,9 +21,9 @@ export default function Home() {
                 Instagram
               </Link>
             </ul>
-            {/* <ul>
+            <ul>
               <Link href={'/assets/price-list.pdf'}>Price list</Link>
-            </ul> */}
+            </ul>
             <ul>
               <Link href={'mailto:maneartistrybyjay@gmail.com'}>Contact</Link>
             </ul>
